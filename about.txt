@@ -1,0 +1,21 @@
+Conversor de Video a Arte ASCII en Tiempo Real
+
+    -Este programa captura video en tiempo real desde la cámara de la computadora, muestra el video original junto con una versión convertida a arte ASCII en la misma pantalla. Está diseñado para ser eficiente y permitir el ajuste de parámetros como el ancho de la conversión a ASCII y el framerate.
+
+
+El programa depende de las siguientes librerías, que deben estar instaladas en el entorno:
+
+    -OpenCV (opencv-python)
+    -Pillow (Pillow)
+    -Matplotlib (matplotlib)
+    -NumPy (numpy)
+
+
+Parámetros configurables:
+
+    -Ancho de la conversión ASCII: Puedes ajustar el ancho de la imagen que se convierte a ASCII modificando la variable ASCII_WIDTH en el código. Esto te permitirá ajustar el nivel de detalle en la representación ASCII, a cambio de un mayor o menor consumo de recursos.
+
+    -Control de Framerate: El framerate está controlado por la variable FRAME_DELAY. Puedes ajustar este valor para incrementar o reducir la tasa de cuadros por segundo. El valor por defecto es de 30 FPS. Si tienes problemas de rendimiento, puedes reducir el framerate ajustando este valor.
+
+    -Salida de Video: Si prefieres almacenar el video procesado en un archivo en lugar de verlo en tiempo real, puedes modificar el código para escribir el video a un archivo de salida utilizando cv2.VideoWriter.
+
